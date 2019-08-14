@@ -10,7 +10,7 @@
 <?php $_product = Mage::registry('current_product');
 if ($_product): ?>
 <meta property="og:type" content="product" />
-<meta property="og:title" content="<?php echo trim($_product->getName()); ?>"/>
+<meta property="og:title" content="<?php echo $this->getLayout()->getBlock('head')->getTitle(); ?>"/>
 <meta property="og:image" content="<?php echo Mage::helper('catalog/image')->init($_product, 'image');?>"/>
 <meta property="og:price:amount" content="<?php echo $_product->getSpecialPrice() ?>" />
 <meta property="og:price:standard_amount" content="<?php echo $_product->getPrice() ?>" />
