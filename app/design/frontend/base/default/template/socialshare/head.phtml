@@ -14,7 +14,7 @@
 	$_socialShareOgData["og:type"] 			= "article";
 	$_socialShareOgData["og:title"] 		= strip_tags($this->getLayout()->getBlock('head')->getTitle());
 	$_socialShareOgData["og:url"]           = Mage::helper('core')->escapeHtml(Mage::helper('core/url')->getCurrentUrl());
-	$_socialShareOgData["og:description"] 	= strip_tags( $this->getLayout()->getBlock('head')->getDescription() );  //Head Meta Descripion
+	$_socialShareOgData["og:description"] 	= str_replace("'","`",strip_tags( $this->getLayout()->getBlock('head')->getDescription() ) );  //Head Meta Descripion
 	//$_socialShareOgData["og:description"] = strip_tags($this->getDescription());
 	$_socialShareOgData["og:site_name"] = Mage::app()->getStore()->getFrontEndName();
 
@@ -26,7 +26,7 @@
 		$_socialShareOgData["og:url"] 			= $_product->getProductUrl();
 		
 		if( empty($_socialShareOgData["og:description"]) ) 
-			$_socialShareOgData["og:description"] 	= htmlspecialchars(strip_tags(($_product->getShortDescription())));
+			$_socialShareOgData["og:description"] 	= str_replace("'","`",strip_tags(($_product->getShortDescription())));
 		
 		/* Pricing */
 		if (Mage::getStoreConfig('sales/msrp/enabled') != "1") { // MAP pricing NOT enabled
@@ -93,7 +93,7 @@
 	/* Print OG Tags */
 	foreach($_socialShareOgData as $key => $value) {
 	    if(!empty($value))
-		  echo "<meta property=\"{$key}\" content=\"{$value}\" />\n";
+		  echo "<meta property='{$key}' content='{$value}' />\n";
 	}
 ?>
 <!-- END SocialShare - OpenGraphTags Head -->

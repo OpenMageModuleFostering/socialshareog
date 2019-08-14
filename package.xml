@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package>
     <name>SocialShareOG</name>
-    <version>3.0.2</version>
+    <version>3.0.3</version>
     <stability>stable</stability>
     <license>GNU</license>
     <channel>community</channel>
@@ -14,9 +14,9 @@ Changed is_empty value check&#xD;
 added default price 0.00 for type 'product' as to Facebook requirements&#xD;
 Striping HTML Before using htmlspecialchars</notes>
     <authors><author><name>Roy Toledo</name><user>NikNak</user><email>toledoroy@gmail.com</email></author></authors>
-    <date>2015-09-14</date>
-    <time>05:35:59</time>
-    <contents><target name="magecommunity"><dir name="SocialShare"><dir name="OpenGraphTags"><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Color.php" hash="ec237e9de0c6de32f75f1419a337defb"/><file name="Font.php" hash="a25370be2d6777fc30fa295888d59800"/><file name="Language.php" hash="d31bd885a47e85565d2b553d41664cdf"/><file name="Layout.php" hash="0e0c072db9b994d340e5a876fabfc470"/><file name="Verb.php" hash="502714d6b8e0b6dfb592e8f78753869a"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="0d955fa9a94fddc4e5fe8b6c87f1cece"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Localization.php" hash="124bfcf8e6be20123772da9c5c458989"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="000d6508eaaec0ab8f9ca63d5bd1418a"/><file name="config.xml" hash="efdb49f4ced5ec95afd300797f1ec187"/><file name="system.xml" hash="bbbba32503774d6adabaf78aeafecd8c"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="socialshare"><file name="OpenGraphTags.xml" hash="fab44e385036aa51b436aee01baed864"/></dir></dir><dir name="template"><dir name="socialshare"><file name="head.phtml" hash="98ca8e26361f7aec07520a3574a3788e"/><file name="body.phtml" hash="a978f917347c374dbe8fb9145d22df94"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SocialShare_OpenGraphTags.xml" hash="820d4be224ecac5ad1ba1a7e23cb7b55"/></dir></target></contents>
+    <date>2017-04-15</date>
+    <time>06:44:58</time>
+    <contents><target name="magecommunity"><dir name="SocialShare"><dir name="OpenGraphTags"><dir name="Adminhtml"><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Color.php" hash="ec237e9de0c6de32f75f1419a337defb"/><file name="Font.php" hash="a25370be2d6777fc30fa295888d59800"/><file name="Language.php" hash="d31bd885a47e85565d2b553d41664cdf"/><file name="Layout.php" hash="0e0c072db9b994d340e5a876fabfc470"/><file name="Verb.php" hash="502714d6b8e0b6dfb592e8f78753869a"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="0d955fa9a94fddc4e5fe8b6c87f1cece"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><dir name="Dropdown"><file name="Localization.php" hash="124bfcf8e6be20123772da9c5c458989"/></dir></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="000d6508eaaec0ab8f9ca63d5bd1418a"/><file name="config.xml" hash="efdb49f4ced5ec95afd300797f1ec187"/><file name="system.xml" hash="bbbba32503774d6adabaf78aeafecd8c"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="socialshare"><file name="OpenGraphTags.xml" hash="fab44e385036aa51b436aee01baed864"/></dir></dir><dir name="template"><dir name="socialshare"><file name="head.phtml" hash="e3981db8f78065d04709013cabc13722"/><file name="body.phtml" hash="a978f917347c374dbe8fb9145d22df94"/></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SocialShare_OpenGraphTags.xml" hash="820d4be224ecac5ad1ba1a7e23cb7b55"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>4.0.0</min><max>7.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>4.0.0</min><max>8.0.0</max></php></required></dependencies>
 </package>
