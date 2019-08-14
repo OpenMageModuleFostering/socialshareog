@@ -16,10 +16,9 @@
 	/* Defaults */
 	$_socialShareOgData["og:type"] 			= "article";
 	$_socialShareOgData["og:title"] 		= htmlspecialchars($this->getLayout()->getBlock('head')->getTitle());
-	$_socialShareOgData["og:url"] 			= Mage::helper('core/url')->getCurrentUrl();
-	$_socialShareOgData["og:description"] 	= htmlspecialchars( $this->getLayout()->getBlock('head')->getDescription() );
+	$_socialShareOgData["og:url"]           = Mage::helper('core')->escapeHtml(Mage::helper('core/url')->getCurrentUrl());
+	$_socialShareOgData["og:description"] 	= strip_tags( htmlspecialchars( $this->getLayout()->getBlock('head')->getDescription() ) );
 	//$_socialShareOgData["og:description"] = strip_tags($this->getDescription());
-	
 	$_socialShareOgData["og:site_name"] = Mage::app()->getStore()->getFrontEndName();
 
 	/* Product Pages */
@@ -40,6 +39,7 @@
 			} else { // Product not on sale
 				$_socialShareOgData["og:price:standard_amount"] = $_product->getPrice();
 				$_socialShareOgData["og:price:amount"] 			= $_product->getSpecialPrice();
+				$_socialShareOgData["og:product:price:amount"] 	= 0.00;                        // required by FB
 			}
 			$_socialShareOgData["og:price:currency"] 			= Mage::app()->getStore()->getCurrentCurrencyCode();
 		} elseif ($_product->getMsrp()) { // MAP pricing enabled and product has MSRP
