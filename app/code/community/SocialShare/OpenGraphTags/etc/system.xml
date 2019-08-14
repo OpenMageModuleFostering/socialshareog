@@ -70,24 +70,6 @@
                         </fb_admins>
                     </fields>
 				</facebook>
-				<twitter>
-					<label>Twitter</label>
-                    <sort_order>30</sort_order>
-                    <show_in_default>1</show_in_default>
-                    <show_in_website>1</show_in_website>
-                    <show_in_store>1</show_in_store>
-                    <fields>
-                        <account translate="label">
-                            <label>Tweeter Account</label>
-                            <comment><![CDATA[ Open a <a target="_blank" href="http://twitter.com/">Twitter Account</a>]]></comment>
-                            <frontend_type>text</frontend_type>
-                            <sort_order>52</sort_order>
-                            <show_in_default>1</show_in_default>
-                            <show_in_website>1</show_in_website>
-                            <show_in_store>1</show_in_store>
-	                    </account>
-	                </fields>
-				</twitter>	
 	        </groups>
         </opengraphtags>
     </sections>
