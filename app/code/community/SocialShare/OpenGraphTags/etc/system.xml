@@ -52,7 +52,7 @@
                     <fields>
                         <fb_appid translate="label">
                             <label>Application id / key</label>
-                            <comment><![CDATA[ Get a <a target="_blank" href="http://www.facebook.com/developers/createapp.php">Facebook API Key</a>]]></comment>
+                            <comment><![CDATA[ Get a <a target="_blank" href="https://developers.facebook.com/apps">Facebook API Key</a>]]></comment>
                             <frontend_type>text</frontend_type>
                             <sort_order>20</sort_order>
                             <show_in_default>1</show_in_default>

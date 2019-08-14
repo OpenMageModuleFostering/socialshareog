@@ -10,7 +10,6 @@
 <?php $product = Mage::registry('current_product');
 if ($product): ?>
 <meta property="og:title" content="<?php echo trim($product->getName()); ?>"/>
-<meta property="og:description" content="<?php echo strip_tags($product->getDescription()) ?>" />
 <meta property="og:image" content="<?php echo Mage::helper('catalog/image')->init($product, 'image');?>"/>
 <?php endif; ?>
 <!-- SocialShare - OpenGraphTags Head END -->
