@@ -1,12 +1,12 @@
 {
     "name": "OpenMageModuleFostering/SocialShareOG",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "GNU",
     "homepage": "",
     "description": "Open Graph Tags support for magento store",
     "authors": [
     {
-        "name": "Roy_Toledo",
+        "name": "Roy Toledo",
         "email": "toledoroy@gmail.com"
     }
 ],
