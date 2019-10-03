@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/SocialShareOG",
+    "name": "OpenMageModuleFostering\/SocialShareOG",
     "type": "magento-module",
     "license": "GNU",
     "homepage": "",
     "description": "Open Graph Tags support for Magento store",
     "authors": [
-    {
-        "name": "Roy Toledo",
-        "email": "toledoroy@gmail.com"
-    }
-],
+        {
+            "name": "Roy Toledo",
+            "email": "toledoroy@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
